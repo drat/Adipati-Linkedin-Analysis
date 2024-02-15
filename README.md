@@ -1,41 +1,34 @@
-# LinkedIn Profile Analyzer 🚀💼
+Adipati Analisis Profil LinkedIn 🚀💼
 
-Welcome to the LinkedIn Profile Analyzer! This tool not only reads your profile but also visually analyzes your profile picture to provide detailed feedback and actionable suggestions for elevating a LinkedIn profile.
+Selamat datang di Analisis Profil LinkedIn! Alat ini tidak hanya membaca profil Anda tetapi juga menganalisis gambar profil secara visual untuk memberikan umpan balik terperinci dan saran yang dapat dilaksanakan untuk meningkatkan profil LinkedIn.
 
-## How It Works
+### Bagaimana Cara Kerjanya
+Aplikasi kami memanfaatkan kekuatan model OpenAI's GPT-4 dan GPT-4 Vision melalui API Assistant, mengintegrasikan kemampuan analisis teks dan visual. Berikut adalah gambaran singkat:
 
-Our app leverages the power of OpenAI's GPT-4 and GPT-4 Vision models through the Assistants API, integrating both text and visual analysis capabilities. Here's a quick overview:
+- **app.py:** Frontend aplikasi, dibangun dengan Streamlit. Ini mengelola antarmuka pengguna, memfasilitasi interaksi yang mudah, dan menampilkan wawasan langsung kepada Anda.
+- **main.py:** Menginisialisasi Assistant OpenAI yang khusus dirancang untuk optimasi profil LinkedIn, menggabungkan pengambilan dari dokumen dan pemanggilan fungsi kustom.
+- **linkedin_scraper.py:** Mengumpulkan data dari URL profil LinkedIn Anda, mempersiapkannya untuk analisis komprehensif oleh Asisten.
 
-- `app.py`: The frontend of the application, built with Streamlit. It manages the user interface, facilitating easy interaction and displaying insights directly to you.
-- `main.py`: Initializes the OpenAI Assistant specifically designed for LinkedIn profile optimization, incorporating retrieval from documents and custom function calling.
-- `linkedin_scraper.py`: Gathers data from your LinkedIn profile URL, preparing it for comprehensive analysis by the Assistant.
+### Langkah-langkah Sederhana untuk Pengguna:
+1. Masukkan URL profil LinkedIn Anda.
+2. Aplikasi akan mengambil data profil Anda, mempersiapkannya untuk analisis mendalam.
+3. Asisten AI kustom kami, ditingkatkan dengan kemampuan visual, memeriksa baik konten maupun gambar profil, memastikan evaluasi profil yang holistik.
 
-### Simple Steps for Users:
-1. Input your LinkedIn profile URL.
-2. The app scrapes your profile data, readying it for in-depth analysis.
-3. Our custom AI Assistant, enhanced with vision capabilities, examines both the content and the profile picture, ensuring a holistic profile evaluation.
+### Sorotan
+- **OpenAI Assistants API:** Menggunakan Assistants API untuk analisis teks dan rekomendasi.
+- **Fungsi Kustom & GPT-4 Vision:** Fungsi kustom mengakses GPT-4 Vision untuk kritik yang mendalam terhadap gambar profil, mengevaluasi presentasi profesional dan kesesuaian.
+- **Pengambilan dan Pemanggilan Fungsi:** Mengintegrasikan pengambilan dokumen untuk konteks yang lebih kaya dan memanggil fungsi kustom untuk tugas khusus seperti analisis gambar.
 
-## Highlights
+### Memulai dengan Cepat
+1. **Klon dan Atur:** Klon repositori ini dan instal dependensi (pip install -r requirements.txt).
+2. **Jalankan Aplikasi:** Gunakan streamlit run app.py untuk memulai aplikasi.
+3. **Masukkan dan Analisis:** Cukup masukkan kunci API OpenAI dan URL profil LinkedIn Anda di sidebar, kemudian tekan "Analisis" untuk melihat keajaiban terjadi.
 
-- **OpenAI Assistants API**: Using the Assistants API for textual analysis and recommendations.
-- **Custom Function & GPT-4 Vision**: A custom function taps into GPT-4 Vision for an insightful critique of profile pictures, evaluating professional presentation and suitability.
-- **Retrieval and Function Calling**: Seamlessly integrates document retrieval for enriched context and calls custom functions for specialized tasks like image analysis.
+### Berkontribusi
+Kami menyambut kontribusi! Jika Anda memiliki saran atau perbaikan, silakan fork repositori ini, commit pembaruan Anda, dan kirimkan pull request.
 
-## Quick Start
-
-1. **Clone and Setup**: Clone this repo and install dependencies (`pip install -r requirements.txt`).
-2. **Run the App**: Use `streamlit run app.py` to start the application.
-3. **Input and Analyze**: Simply enter your OpenAI API key and LinkedIn profile URL in the sidebar, then press "Analyze" to see the magic happen.
-
-## Contributing
-
-We welcome contributions! If you have suggestions or improvements, please fork the repo, commit your updates, and submit a pull request.
-
-## Tech
-
-- **Streamlit**: For creating the web app interface.
-- **OpenAI API**: Leveraging Assistants API, including GPT-4 for textual analysis and GPT-4 Vision for image analysis.
-- **Python**: For backend logic and integration with the OpenAI API.
-
-
-Made with ❤️ and Python.
+### Teknologi
+- **Streamlit:** Untuk membuat antarmuka aplikasi web.
+- **OpenAI API:** Memanfaatkan API Assistants, termasuk GPT-4 untuk analisis teks dan GPT-4 Vision untuk analisis gambar.
+- **Python:** Untuk logika backend dan integrasi dengan API OpenAI.
+- **Dibuat dengan ❤️ dan Python.**
